@@ -1,0 +1,706 @@
+@-ms-viewport{
+    width: device-width;
+  }
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+*::-moz-selection{
+    background-color: #EA2027;
+    color: white;
+}
+*::selection{
+    background-color: #EA2027;
+    color: white;
+}
+.body{
+    width: 80%;
+    margin: 0 auto;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+@media screen and (max-width: 475px) {
+    .body{
+        width: 95%;
+    }
+}
+/* --------------till this body------------------*/
+/* ---------wedding invitation starts */
+.header{
+    font-family: 'Alex Brush', cursive;
+    text-align: center;
+    font-size: 6rem;
+    font-weight: 300;
+    color: #c0392b;
+    margin-bottom: 0.3em;
+}
+@media screen and (max-width: 625px){
+    .header{
+        font-size: 4.5rem;
+    }
+}
+@media screen and (max-width: 470px){
+    .header{
+        font-size: 6rem;
+        margin-bottom: 0.1em;
+    }
+}
+@media screen and (max-width: 400px){
+    .header{
+        font-size: 5rem;
+    }
+}
+@media screen and (max-width: 300px){
+    .header{
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width: 170px){
+    .header{
+        font-size: 2.5rem;
+    }
+}
+
+
+/* ---------wedding invitation ends */
+/* ---------ganesh image ----starts */
+.image-ganesh{
+    width: 40%;
+    margin-left: 30%;
+    background-color: white;
+    margin-bottom: 1em;
+}
+@media screen and (max-width: 475px) {
+    .image-ganesh{
+        width: 60%;
+        margin-left: 20%;
+    }
+}
+@media screen and (max-width: 350px) {
+    .image-ganesh{
+        width: 75%;
+        margin-left: 12.5%;
+    }
+}
+/* ---------ganesh image ----ends */
+/* ---------u -------starting---- */
+.u{
+    width: 100%;
+    margin-bottom: 3em;
+}
+.u p{
+    text-align: center;
+    font-size: 2rem;
+    color: #c0392b;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+}
+@media screen and (max-width: 700px) {
+    .u{
+        margin-bottom: 2em;
+    }
+    .u p{
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width: 350px) {
+    .u{
+        margin-bottom: 1.5em;
+    }
+    .u p{
+        font-size: 1.1rem;
+    }
+}
+@media screen and (max-width: 275px) {
+    .u{
+        margin-bottom: 1.1em;
+    }
+    .u p{
+        font-size: 0.9rem;
+        font-weight: 700;
+    }
+}
+/* ---------u -------ends---- */
+
+/*-------------------------- parents picture------starts---------------------- */
+.split-container{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin-bottom: 3em;
+}
+.split-1,.split-2{
+    width: 40%;
+    padding-bottom: 2em;
+    -webkit-transition: -webkit-box-shadow 0.3s ease-in-out;
+    transition: -webkit-box-shadow 0.3s ease-in-out;
+    -o-transition: box-shadow 0.3s ease-in-out ;
+    transition: box-shadow 0.3s ease-in-out ;
+    transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+}
+.split-1 img,
+.split-2 img{
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    border-radius: 8px;
+}
+.split-1 p,
+.split-2 p{
+    text-align: center;
+}
+.parent-name{
+    color: #EA2027;
+    font-size: 2.4rem;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+}
+.parent-work{
+    color: #EA2027;
+    font-size: 1.2rem;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+}
+.and{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #EA2027;
+}
+
+.split-1:hover,
+.split-2:hover{
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media screen and (max-width:700px) {
+    .split-container{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
+    }
+    .split-1,.split-2{
+        width: 90%;
+    }
+}
+@media screen and (max-width:475px) {
+    .split-1,.split-2{
+        padding-bottom: 1em;
+    }
+    .parent-name{
+        font-size: 2rem;
+    }
+    .parent-work{
+        font-size: 1rem;
+    }
+    .and{
+        font-size: 1.8rem;
+    }
+}
+@media screen and (max-width:350px) {
+    .split-1,.split-2{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width:300px) {
+    .parent-name{
+        font-size: 1.6rem;
+    }
+    .parent-work{
+        font-size: 0.8rem;
+    }
+    .and{
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width:210px) {
+    .parent-name{
+        font-size: 1.2rem;
+    }
+    .parent-work{
+        font-size: 0.3rem;
+    }
+    .and{
+        font-size: 1.3rem;
+    }
+}
+/*-------------------------- parents picture------ends---------------------- */
+/* -------------------------parents message starts */
+.parents-message{
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 2em;
+}
+.parents-message p{
+    font-size: 1.8rem;
+    text-align: center;
+    font-style: italic;
+    color: #EA2027;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    word-spacing: 0.1em;
+}
+@media screen and (max-width: 789px) {
+    
+    .parents-message p{
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width: 679px) {
+    .parents-message{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .parents-message p{
+        font-size: 1.3rem;
+        word-spacing: 0;
+    }
+}
+@media screen and (max-width: 359px) {
+    .parents-message{
+        width: 95%;
+        margin-left: 2.5%;
+    }
+    .parents-message p{
+        font-size: 1.1rem;
+    }
+}
+
+/* -------------------------parents message ends */
+/* --------------------------ashwin and sasikala section--------------- */
+.main-container{
+    width: 100%;
+    margin-bottom: 5em;
+}
+.main-container img{
+    width: 40%;
+    margin-left: 30%;
+    border-radius: 8px;
+    margin-bottom: 4em;
+    -webkit-transition: -webkit-box-shadow 0.3s ease-in-out;
+    transition: -webkit-box-shadow 0.3s ease-in-out;
+    -o-transition: box-shadow 0.3s ease-in-out ;
+    transition: box-shadow 0.3s ease-in-out ;
+    transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+}
+.main-container img:hover{
+    -webkit-box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+            box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+.main-container-split{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 1em;
+}
+.couple-name{
+    color: #EA2027;
+    font-size: 2.6rem;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+}
+.span{
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+.work{
+    text-align: center;
+    color: #EA2027;
+    font-size: 1.3rem;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+}
+.with p{
+    font-family: 'Alex Brush', cursive;
+    font-size: 3rem;
+    font-weight: 400;
+    color: #EA2027;
+}
+@media screen and (max-width: 1050px) {
+    .main-container img{
+        margin-bottom: 2em;
+    }
+    .main-container-split{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+}
+@media screen and (max-width: 750px) {
+    .main-container img{
+        width: 70%;
+        margin-left: 15%;
+        margin-bottom: 2em;
+    }
+}
+@media screen and (max-width: 650px) {
+    .couple-name{
+        font-size: 2.2rem;
+    }
+    .span{
+        font-size: 1.65rem;
+    }
+    .work{
+        font-size: 1.1rem;
+    }
+    .with p{
+        font-size: 2.5rem;
+    }
+}
+@media screen and (max-width: 450px) {
+    .main-container img{
+        width: 90%;
+        margin-left: 5%;
+        margin-bottom: 2em;
+    }
+    .couple-name{
+        font-size: 2rem;
+    }
+    .span{
+        font-size: 1.5rem;
+    }
+    .work{
+        font-size: 1rem;
+    }
+    .with p{
+        font-size: 2.3rem;
+    }
+}
+@media screen and (max-width: 360px) {
+    
+    .couple-name{
+        font-size: 1.5rem;
+    }
+    .span{
+        font-size: 1rem;
+    }
+    .work{
+        font-size: 0.1rem;
+        letter-spacing: 0;
+    }
+    .with p{
+        font-size: 2.3rem;
+    }
+}
+@media screen and (max-width: 268px) {
+    .couple-name{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+    .span{
+        font-size: 0.8rem;
+        display: block;
+        text-align: center;
+    }
+    .work{
+        font-size: 0.05rem;
+    }
+    .with p{
+        font-size: 2.1rem;
+    }
+}
+@media screen and (max-width: 200px) {
+    .couple-name{
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    
+    .span{
+        font-size: 0.6rem;
+        display: block;
+        text-align: center;
+    }
+    .work{
+        font-size: 0.03rem;
+    }
+    .with p{
+        font-size: 1.9rem;
+    }
+}
+/* --------------------------ashwin and sasikala section ends--------------- */
+/* --------------------------address section starts----------------------------------- */
+.address-section{
+    width: 100%;
+    color: #EA2027;
+    margin-bottom: 5em;
+}
+.first-p{
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 2em;
+}
+.time,.at,.place{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1%;
+}
+.time{
+    font-size:1.8rem ;
+    font-weight: 600;
+}
+.at{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.place{
+    font-size: 1.8rem;
+    font-weight: 600;
+    word-spacing: 0.3em;
+}
+@media screen and (max-width: 845px) {
+    .time{
+        font-size:1.6rem ;
+    }
+    .at{
+        font-size: 1.6rem;
+    }
+    .place{
+        font-size: 1.6rem;
+        word-spacing: 0.2em;
+    }
+    .first-p{
+        font-size: 1.3rem;
+    }
+}
+@media screen and (max-width: 700px) {
+    .block1{
+        display: block;
+    }
+}
+@media screen and (max-width: 675px) {
+    .time{
+        font-size:1.4rem ;
+    }
+    .at{
+        font-size: 1.4rem;
+    }
+    .place{
+        font-size: 1.4rem;
+        word-spacing: 0.1em;
+    }
+    .first-p{
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 595px) {
+    .block{
+        display: block;
+    }
+}
+@media screen and (max-width: 475px) {
+    .time{
+        font-size:1.2rem ;
+        font-weight: 600;
+    }
+    .at{
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    .place{
+        font-size: 1.2rem;
+        word-spacing: 0;
+        font-weight: 600;
+    }
+}
+@media screen and (max-width: 265px) {
+    .time{
+        font-size:1rem ;
+    }
+    .at{
+        font-size: 1rem;
+    }
+    .place{
+        font-size: 1rem;
+        word-spacing: 0;
+    }
+    .first-p{
+        font-size: 1.1rem;
+    }
+}
+@media screen and (max-width: 200px) {
+    .time{
+        font-size:0.8rem ;
+    }
+    .at{
+        font-size: 0.8rem;
+    }
+    .place{
+        font-size: 0.8rem;
+        word-spacing: 0;
+    }
+    .first-p{
+        font-size: 0.7rem;
+    }
+}
+/* --------------------------address section ends----------------------------------- */
+/* --------------------------timing section starts---------------------------------- */
+.program-section{
+    width: 100%;
+    margin-bottom: 5em;
+}
+.program-section h2{
+    font-family: 'Alex Brush', cursive;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 300;
+    color: #c0392b;
+    margin-bottom: 0.3em;
+}
+.program-split{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+.program-split div{
+    margin-bottom: 3em;
+}
+.reception,.dinner,.muhurtham{
+    margin: 0 auto;
+    padding: 6px 18px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    color: white;
+    font-size: 2rem;
+    background-color: #EA2027;
+    margin-bottom: 1.5em;
+    font-weight: 300;
+    font-style: italic;
+    border: 1px solid #EA2027;
+    -webkit-transition: -webkit-box-shadow 0.3s ease-in-out;
+    transition: -webkit-box-shadow 0.3s ease-in-out;
+    -o-transition: box-shadow 0.3s ease-in-out ;
+    transition: box-shadow 0.3s ease-in-out ;
+    transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+}
+
+.program-split p{
+    text-align: center;
+    font-style: italic;
+    -webkit-transition: color 0.3s ease-in-out;
+    -o-transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
+
+}
+.program-split p:nth-child(2):hover{
+    color: #EA2027;
+}
+.reception:hover,.dinner:hover,.muhurtham:hover{
+    -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+@media screen and (max-width: 360px) {
+    .program-section h2{
+        font-size: 4rem;
+    }
+}
+@media screen and (max-width: 290px) {
+    .program-section h2{
+        font-size: 2.5rem;
+    }
+}
+@media screen and (max-width: 215px) {
+    .reception,.dinner,.muhurtham{
+        padding: 3px 6px;
+        
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 175px) {
+    .program-section h2{
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width: 150px) {
+    .program-section h2{
+        font-size: 1.5rem;
+    }
+}
+/* ---------------timing section ends---------------------- */
+/* ----------------complements------------------------------- */
+
+.complements-section{
+    width: 100%;
+    margin-bottom: 4em;
+}
+.complements-section p{
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+.complement-head{
+    margin-bottom: 2em;
+    color: #EA2027;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 2rem;
+    letter-spacing: 0.1em;
+}
+.complement{
+    color: #EA2027;
+    font-weight: 400;
+    font-size: 1.8rem;
+    letter-spacing: 0.1em;
+}
+@media screen and (max-width: 435px) {
+    .complement-head{
+        margin-bottom: 1.5em;
+        color: #EA2027;
+        font-size: 1.7rem;
+        letter-spacing: 0em;
+    }
+    .complement{
+        font-size: 1.5rem;
+        letter-spacing: 0em;
+    }
+}
+@media screen and (max-width: 320px) {
+    .complement-head{
+        font-size: 1.5rem;
+    }
+    .complement{
+        font-size: 1.4rem;
+    }
+}
+@media screen and (max-width: 270px) {
+    .complement-head{
+        font-size: 1.3rem;
+    }
+    .complement{
+        font-size: 1.2rem;
+    }
+}
